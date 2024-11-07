@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {  
+    font-family: 'Poppins', sans-serif;
+    padding:0 20px;
+}
+
+.container {
+       width: 100%;
+       margin: 0 auto;
+    }
+header .menu {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    background-color: #10b3c9;
+    text-align: center;
+    padding: 20px;
+}
+
+.menu-item {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+}
+.menu-item.active {
+    color: #084d6e;
+}
+.menu-item:hover {
+    color: #084d6e;
+    transform: scale(1.2);
+}
+
+
+.mainn .container {
+    width: 100%;
+    margin: 0 auto;
+    height: calc(100vh - 90px);
+    font-size: 30px;
+    color: white;
+    padding: 20px 0;
+    font-weight: bold;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-areas: "header header header header header header header"
+                         "a a main main main aside aside "
+                         "a a main main main aside aside "
+                         "a a main main main aside aside "
+                         "a a main main main aside aside  "
+                         "b b main main main d d "
+                         "b b main main main d d " 
+                         "b b main main main d d " 
+                         "footer footer footer footer footer d d "
+                         "footer footer footer footer footer d d ";
+    gap: 20px;
+}
+
+.mainn header {
+    grid-area: header;
+    background-color: #78C2A8;
+    cursor: pointer;
+}
+
+.mainn aside {
+    grid-area: aside;
+    background-color: #F46161;
+    border-radius: 20px;
+
+    cursor: pointer;
+}
+
+
+.mainn main {
+    grid-area: main;    
+    background-color: #9061F4;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.mainn a {
+    grid-area: a;
+    background-color: #6193F4;
+    border-radius: 20px;
+
+    cursor: pointer;
+}
+
+.mainn b {
+    grid-area: b;
+    background-color: #6193F4;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.mainn d {
+    grid-area: d;
+    background-color: #F46161;
+    border-radius: 20px;
+
+    cursor: pointer;
+}
+
+.mainn footer {
+    grid-area: footer;
+    background-color: #F4B161;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.mainn .container > * {
+    border: 3px solid transparent; 
+    transition: border-color 0.3s; 
+  }
+  
+.mainn .container > *:hover {
+    border-color: #0dff00;
+    transform: scale(1.03);
+  }
+.mainn .container header:hover {
+    border-color: #0dff00;
+    transform: none;
+  }

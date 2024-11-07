@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+
+  padding: 0 20px;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  border-color: #0055ff;
+}
+header .menu {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  background-color: #10b3c9;
+  text-align: center;
+  padding: 20px;
+}
+
+.menu-item {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+}
+.menu-item.active {
+  color: #084d6e;
+}
+.menu-item:hover {
+  color: #084d6e;
+  transform: scale(1.2);
+}
+.main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 70px;
+  letter-spacing: -0.005em;
+  text-align: center;
+  color: #121619;
+}
+p {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 70px;
+  text-align: center;
+  color: #0055ff;
+}
+.main-cards {
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+.card {
+  width: 100%;
+  height: 250px;
+  display: grid;
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+.card-img {
+    margin-top: 40px;
+  position: relative;
+}
+.avatar {
+  margin-top: 30px;
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.avatar.a {
+    width: 115px;
+    height: 115px;
+}
+.icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  top: 45px;
+  left: 20px;
+}
+.card-text {
+    margin-top: 50px;
+  width: 80%;
+  text-align: center;
+}
+.card-text b {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  color: #121619;
+}
+.card-text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: #4d5358;
+}
